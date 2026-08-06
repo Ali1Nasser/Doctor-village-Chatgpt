@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "doctor-village-portal",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-08-06",
+  "account_id": "1ca337dfa2c4b572409e393e577c3bc5",
+  "vars": { "APP_ENV": "demo", "SESSION_HOURS": "168" },
+  "assets": { "directory": "./public", "binding": "ASSETS", "not_found_handling": "single-page-application", "run_worker_first": ["/api/*"] },
+  "d1_databases": [{ "binding": "DB", "database_name": "doctor-village-portal", "database_id": "REPLACE_WITH_D1_DATABASE_ID", "migrations_dir": "migrations" }]
+}
